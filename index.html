@@ -1,8 +1,8 @@
-git add .
 
-git commit -m 'add index.html file'
 
-git push
+
+
+
 
 <!DOCTYPE HTML>
 <html>
@@ -59,7 +59,32 @@ git push
     .sidebar-img {
         width: 200px;
     }
-    .content {
+    .content H1 { 
+        color: black;
+         }
+
+         #portfolio {
+             list-style-type: none;
+             padding-left: 0;
+         }
+
+         #portfolio li {
+             background: #fff;
+             padding: 10px;
+             border-radius: 10px;
+             margin-bottom: 10px;
+         }
+
+         #portfolio li:hover {
+             background: #eee;
+         }
+
+         #portfolio a {
+             text-decoration: none;
+             color: #454545;
+         }
+
+
         flex: 1;
         padding: 15px;
     }
@@ -73,20 +98,17 @@ git push
  </style> 
      
    <body>
-        <!-- #all-contents {
-max-width: 800px;
-margin: auto;
-} -->
+        
         <div id="all-content">
             ...
         </div>
-   </body>       
+      
             <nav>
-                <h1> Sidwolf's Music Productions</h1>
+               <h1> Sidwolf's Music Productions</h1>
                 <ul> 
-                    <! --elements -->
+                    <!--elements -->
                     <id="nav-ul"
-                    <li> class="nav-li"
+                    <li class="nav-li">
                       <a href="index.hetml"> Home </a>
                     </li>
                     <li>
@@ -94,10 +116,7 @@ margin: auto;
                     </li>
                 </ul>
             </nav>
-            background: rgb(239, 80, 41);
-            margin: 0 auto;
-            display: flex;
-            padding: 10px;
+            
             
             <main>
                 <!-- two Columns-->
@@ -123,10 +142,97 @@ margin: auto;
                         ...
                     </div>
                 </div>            
-                <img> src="https://www.google.com/url?sa=i&url=https%3A%2F%2Ffurplanet.com%2Fshop%2Fitem.aspx%3Fitemid%3D959&psig=AOvVaw0G-eC5GRA-Jv4PA4Cj-FQq&ust=1671763076757000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKiUpPuYjPwCFQAAAAAdAAAAABAD"</ing>
+ <img src="https://furplanet.com/images/CanisMajor_FrontCover-lg.jpg">
 
                 </div>
             </main> 
        </div>         
    </body> 
-</html>           
+</html> 
+
+
+<!DOCTYPE HTML>
+<html>
+    <Head>
+<title>SidWolf's Portfolio</title>
+        <style type="text/css">
+            body {
+                background: rgb(125, 198, 205);
+                color: rgb(45, 45, 45);
+                padding: 10px;
+                font-family: arial;
+            }
+            header {
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+   
+            #all-contents {
+                max-width: 800px;
+                margin: auto;
+            }
+   
+            /* navigation menu */
+            nav {
+                background: rgb(113, 87, 87);
+                margin: 0 auto;
+                display: flex;
+                padding: 10px;
+            }
+            h1 {
+                display: flex;
+                align-items: center;
+                color: rgb(255, 255, 255);
+                flex: 1;
+                margin: 0;
+            }
+            #nav-ul {
+                list-style-image: none;
+            }
+            .nav-li {
+                display: inline-block;
+                padding: 0 10px;
+            }
+            .nav-a {
+                text-decoration: none;
+                color: #fff;
+            }
+   
+            /* main container area beneath menu */
+            main {
+                background: rgb(245, 238, 219);
+                display: flex;
+            }
+            .content {
+                flex: 1;
+                padding: 15px;
+            }
+        </style>   
+    </Head>
+    
+    <body>
+      <div id="all-contents">
+          <nav>
+              <h1>SidWolf's Portfolio</h1>
+              <ul id="nav-ul">
+                  <li class="nav-li">
+                  <a class="nav-a"href="index.html">Home</a> 
+              </li>
+           </ul> 
+         </nav> 
+    <main>
+         <div class="content">
+            <h1>Portfolio</h1>
+            <ul id="portfolio">
+   
+                <li><a href="projects/platformer/">METAPHICAL PERFORMER/SPEAKER/HEALER : PIANIST,MUSIC COMPOSER, SOUND VIBRATION HEALER</a></li>
+                <li><a href="projects/bouncing-box/">MUSIC EDUCATOR : USING MUSIC,SPEAKING AND SOUND VIBRATION TO ELIVATE THE CONSCIOUSNESS OF MY TRIBES</a></li>
+                <li><a href="projects/circularity/">MUSIC COMPOSER: CREATING MUSIC TO HEAL, CHILL AND EDUCATE</a></li>
+         
+           
+           </ul>
+         <div>  
+    </main>       
+         </div>  
+     </body>  
+</html>            
