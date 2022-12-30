@@ -1,0 +1,88 @@
+(function (window) {
+    "use strict";
+    window.opspark = window.opspark || {};
+    window.opspark.platform = window.opspark.platform || {};
+  
+    let platform = window.opspark.platform;
+  
+    /**
+     * init: This function initializes the platforms for the level.
+     *
+     * GOAL: Add as many platforms necessary to make your level challenging.
+     *
+     * Use the createPlatform Function to create platforms for the level.
+     *
+     * createPlatform() takes these arguments:
+     *
+     *      createPlatform(x, y, scaleX, scaleY);
+     *
+     *      x: The x coordineate for the platform.
+     *      y: The y coordineate for the platform.
+     *      scaleX: OPTIONAL The scale factor on the x-axis, this value will
+     *              stretch the platform in width.
+     *      scaleY: OPTIONAL The scale factor on the y-axis, this value will
+     *              stretch the platform in height.
+     */
+    function init(game) {
+      let createPlatform = platform.create;
+  
+      ////////////////////////////////////////////////////////////////////////
+      // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
+      createPlatformfunction(0, 0, 1920, 1200);
+    
+        game.add.sprite(0, 0, 'backdrop');
+    
+        card = game.add.sprite(200, 200, 'card');
+    
+        game.camera.follow(card);
+    
+        cursors = game.input.keyboard.createCursorKeys();
+  
+        type: "top", "bottom", "left", or "right"
+       
+        "Top 4", "bottom 4", "Left 4","right4"
+    
+        let type = {
+          db: { assetKey: "db", points: 10 },
+          max: { assetKey: "max", points: 20 },
+          steve: { assetKey: "steve", points: 30 },
+          grace: { assetKey: "grace", points: 40 },
+          kennedi: { assetKey: "kennedi", points: 50 },
+        }; 
+  
+        switch (type.assetKey) {
+          case 'db':
+              collectable.body.height = 44;
+              break;
+              
+          case 'grace':
+          case 'kennedi':
+              collectable.scale.x = collectable.scale.y = 0.9;
+              break;
+          
+          default:
+              // code
+      }
+      if (gravity) collectable.body.gravity.y = gravity;
+      if (bounce) collectable.body.bounce.y = bounce + Math.random() * 0.2;
+  }
+  opspark.collectable.create = create;
+  };
+  })(window);
+      
+       * ground : here, we create a floor. Given the width of of the platform
+       * asset, giving it a scaleX and scaleY of 2 will stretch it across the
+       * bottom of the game.
+       */
+      createPlatform(0, game.world.height - 32, 3, 2); // DO NOT DELETE
+  
+      createPlatform(0, 500)
+      createPlatform(400, 250);
+      createPlatform(170, 460, 0.5);
+  
+      // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
+      ////////////////////////////////////////////////////////////////////////
+    }
+    platform.init = init;
+  })(window);
+  
